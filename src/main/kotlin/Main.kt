@@ -1,9 +1,6 @@
 package org.example
 
-import org.example.classes.Car
-import org.example.classes.Direction
-import org.example.classes.Moto
-import org.example.classes.User
+import org.example.classes.*
 import kotlin.math.pow
 
 fun main() {
@@ -299,6 +296,18 @@ fun main() {
     // Сравнение перечислений
     if (Direction.NORTH > Direction.WEST)
         println(true)
+
+    // ЗАНЯТИЕ 4
+    val person = Person()
+    person.address
+    // Объекты классов Circle и Rectangle, который являются дочерними классами Shape
+    val circle = Circle(5.0)
+    circle.describe()
+    val rectangle = Rectangle(3.0, 6.0)
+    rectangle.describe()
+    // Объект класса Button, который реализует интерфейсы Clickable и Focusable
+    val button = Button()
+    button.showOff()
 }
 
 // Функция без параметров
